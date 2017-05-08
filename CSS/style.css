@@ -1,0 +1,467 @@
+body{
+	margin: 0 auto;
+/*	overflow: hidden;*/
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	background: #212121;
+}
+
+input, button{
+	outline: none;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li{
+	list-style: none;
+}
+
+div.menu{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	
+	font-weight: bold;
+}
+
+	div.menu ul{
+		width: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+
+		div.menu ul li{
+			display: inline-block;
+			line-height: 50px;
+		}
+
+
+div.social{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	font-weight: bold;
+}
+
+	div.social ul{
+		width: 150px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+
+		div.social ul li{
+			font-size: 20pt;
+			display: inline-block;
+			line-height: 50px;
+		}
+
+section{
+	position: relative;
+	clear: both;
+}
+
+	section:not(.header){
+		margin-top: 20px;
+	}
+
+	section h1{
+		
+	}
+
+	section div.content, section div.background{
+		width: 49%;
+/*		display: table-cell;*/
+	}
+
+	section div.content{
+		position: relative;
+	}
+
+		section div.content.left{
+/*			float: left;*/
+		}
+
+		section div.content.right{
+/*			float: right;*/
+			left: 50%;
+		}
+
+	section div.background{
+		height: 100%;
+		
+		background: red;
+		
+		top: 0px;
+		
+		
+/*		display: inline-block;*/
+		
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		position: absolute;
+	}
+
+		section div.background.right{
+			right: 0px;
+			
+			-webkit-box-shadow: inset 107px 0px 141px 1px #212121;
+			-moz-box-shadow: inset 107px 0px 141px 1px #212121;
+			box-shadow: inset 107px 0px 141px 1px #212121;
+		}
+
+		section div.background.left{
+			left: 0px;
+			
+			-webkit-box-shadow: inset -107px 0px 141px 1px #212121;
+			-moz-box-shadow: inset -107px 0px 141px 1px #212121;
+			box-shadow: inset -107px 0px 141px 1px #212121;
+
+		}
+
+div.container{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	
+	max-width: calc(100% - 40px);
+	
+/*	display: table;*/
+}
+
+	section.header{
+		width: 100%;
+		height: 600px;
+		
+		background: red;
+		
+/*		background-image: url(../Images/microphone2.jpg);*/
+		background-image: url(../Images/dj.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		background-attachment: fixed;
+		
+		-webkit-box-shadow: inset 0px -99px 126px 0px #212121;
+		-moz-box-shadow: inset 0px -99px 126px 0px #212121;
+		box-shadow: inset 0px -99px 126px 0px #212121;
+
+
+	}
+
+		section.header div.container{
+			height: 100%;
+			
+		}
+
+		section.header div.logo{
+			font-size: 50pt;
+			
+			position: absolute;
+/*			bottom: 0px;*/
+			left: 50%;
+/*			transform: translateX(-50%);*/
+			
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+			section.header div.logo img{
+				width: 250px;
+			}
+
+section.my-music{
+	
+}
+
+	section.my-music div.musics{
+		white-space: nowrap;
+		overflow: hidden;
+		width: 100%;
+		
+	}
+
+	section.my-music div.music{
+		width: 200px;
+		height: 200px;
+		
+		display: inline-block;
+		
+		background: purple;
+		
+		position: relative;
+		
+		background-image: url(../Images/dj.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		-webkit-box-shadow: inset 0px -99px 126px 0px rgba(33,33,33, 0.9);
+		-moz-box-shadow: inset 0px -99px 126px 0px rgba(33,33,33, 0.9);
+		box-shadow: inset 0px -99px 126px 0px rgba(33,33,33, 0.9);
+	}
+
+		section.my-music div.music:not(:last-child){
+			margin-right: 20px;
+		}
+
+		section.my-music div.music div.info{
+			display: inline-block;
+			top: 25%;
+			transform: translateY(-50%);
+			position: absolute;
+		}
+
+			section.my-music div.music div.info span{
+				display: block;
+				padding: 0px 20px;
+			}
+
+				section.my-music div.music div.info span.title{
+					font-weight: bold;
+					font-size: 14pt;
+				}
+
+				section.my-music div.music div.info span.featured{
+					font-weight: lighter;
+				}
+
+
+		section.my-music div.music div.buttons{
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			width: 100%;
+			position: absolute;
+			bottom: 20px;
+		}
+
+			section.my-music div.music div.buttons button{
+				font-size: 20pt;
+				
+				background: transparent;
+				border: none;
+				
+				color: #fff;
+			}
+
+	section.bio{
+		
+	}
+
+		section.bio p{
+			font-weight: lighter;
+		}
+
+	section.newsletter{
+		
+	}	
+
+		section.newsletter p{
+			font-weight: lighter;
+		}
+
+		section.newsletter form{
+			margin-bottom: 20px;
+		}
+
+			section.newsletter form input, section.newsletter form button{
+				border: none;
+				width: 100%;
+				display: block;
+				border-radius: 5px;
+				background: rgba(255, 255, 255, 0.7);
+				font-size: 14pt;
+				margin-top: 10px;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+
+				section.newsletter form input:focus{
+					background: rgba(255, 255, 255, 0.9);
+				}
+
+			section.newsletter form button{
+				width: auto;
+				background: rgba(255, 255, 255, 0.3);
+				
+			}
+
+section.vlog{
+	
+}
+
+	section.vlog div.videos{
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+		section.vlog div.videos div.video{
+			display: inline-block;
+			
+			
+		}
+
+			section.vlog div.videos div.video:not(:last-child){
+				margin-right: 20px;
+			}
+
+			section.vlog div.videos div.video div.thumb{
+				width: 230px;
+				height: 129px;
+				
+				position: relative;
+				
+				background-color: red;
+				
+				display: inline-block;
+				
+/*				background-image: url(../Images/dj.jpg);*/
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+				section.vlog div.videos div.video div.thumb:after{
+					font-family: FontAwesome;
+					
+					font-size: 50px;
+					content: "\f04b";
+					color: #ECEFF1;
+
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+	
+			section.vlog div.videos div.video span.title{
+				display: block;
+				font-weight: lighter;
+				
+				width: 230px;
+				overflow: hidden;
+			}
+		
+section.contact{
+	
+}
+
+	section.contact form{
+		
+	}
+
+		section.contact form input, section.contact form textarea, section.contact form button{
+			border: none;
+			width: 100%;
+			display: block;
+			border-radius: 5px;
+			background: rgba(255, 255, 255, 0.7);
+			font-size: 14pt;
+			margin-top: 10px;
+			padding: 10px;
+			box-sizing: border-box;
+			
+			outline: none;
+		}
+
+			section.contact form input:focus, section.contact form textarea:focus{
+				background: rgba(255, 255, 255, 0.9);
+			}
+
+		section.contact form textarea{
+			height: 120px;
+			resize: none;
+		}
+
+		section.contact form button{
+			width: auto;
+			background: rgba(255, 255, 255, 0.3);
+		}
+
+section.credits{
+	background: rgba(0,0,0,0.3);
+	height: 50px;
+}
+
+@media (max-width: 600px) 
+{
+	section div.content, section div.background{
+		width: 100%;
+		padding: 10px;
+		
+		box-sizing: border-box;
+		
+	}
+	
+		section div.content.right{
+/*			float: right;*/
+			left: 0px;
+		}
+	
+	
+		section div.background{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			
+			z-index: -1;
+		}
+	
+		section div.background.right{
+			right: 0px;
+			
+			-webkit-box-shadow: inset 0px -107px 141px 1px #212121;
+			-moz-box-shadow: inset 0px -107px 141px 1px #212121;
+			box-shadow: inset 0px -107px 141px 1px #212121;
+		}
+
+		section div.background.left{
+			left: 0px;
+			
+			-webkit-box-shadow: inset 0px -107px 141px 1px #212121;
+			-moz-box-shadow: inset 0px -107px 141px 1px #212121;
+			box-shadow: inset 0px -107px 141px 1px #212121;
+
+		}
+	
+		section.my-music div.musics{
+			overflow: scroll;
+		}
+	
+		section.my-music div.music{
+			width: 150px;
+			height: 150px;
+
+		}
+	
+			section.my-music div.music:not(:last-child){
+				margin-right: 15px;
+			}
+
+			section.my-music div.music div.buttons button{
+				font-size: 15pt;
+			}
+	
+		section.vlog div.videos{
+			white-space: nowrap;
+			overflow: scroll;
+		}
+	
+		section.vlog div.videos::-webkit-scrollbar, section.my-music div.musics::-webkit-scrollbar{ 
+			display: none; 
+		}
+}
+
